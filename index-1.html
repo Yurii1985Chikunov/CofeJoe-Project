@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CofeJoe-Projectt</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/cj-styles.css" />
   </head>
   <body>
@@ -15,11 +30,11 @@
           </svg>
         </a>
         <ul class="descr-list">
-          <li class="descr-item"><a href="">About us</a></li>
-          <li class="descr-item"><a href="">Benefits</a></li>
-          <li class="descr-item"><a href="">Gallery</a></li>
-          <li class="descr-item"><a href="">Testimonial</a></li>
-          <li class="descr-item"><a href="">Location</a></li>
+          <li><a class="descr-link" href="">About us</a></li>
+          <li><a class="descr-link" href="">Benefits</a></li>
+          <li><a class="descr-link" href="">Gallery</a></li>
+          <li><a class="descr-link" href="">Testimonial</a></li>
+          <li><a class="descr-link" href="">Location</a></li>
         </ul>
 
         <button class="navbar-menu-btn" type="button" data-menu-open>
@@ -54,15 +69,142 @@
       </div>
     </header>
     <main>
-      <section class="hidden">Hero</section>
-      <section class="hidden">Layout</section>
-      <section class="hidden">Layout</section>
-      <section class="hidden">Gallery</section>
-      <section class="hidden">CTA</section>
-      <section class="hidden">Testimonial</section>
-      <section class="hidden">Contact</section>
+      <section class="hero hidden">
+        <div>hero</div>
+      </section>
+
+      <section class="layout-one hidden">
+        <div class="container">
+          <p class="welcome">Welcome</p>
+          <h1 class="journey">Our Journey: Passion for Quality Coffee</h1>
+          <p class="layout-one-deskription">
+            At CoffeeJoy, we believe that every cup tells a story. Our mission
+            is to bring you the finest coffee experiences, crafted with care and
+            dedication. We are committed to sourcing high-quality beans and
+            roasting them to perfection, ensuring each sip is a delight.
+          </p>
+          <button class="find-loc-btn" type="submit">
+            Find location
+            <svg class="icon_loc" width="24" height="24">
+              <use href="./images/icons.svg#icon-map-pin"></use>
+            </svg>
+          </button>
+          <div class="layout-one-img">
+            <picture class="layout-one-pic">
+              <source
+                media="(min-width: 1158px)"
+                srcset="
+                  ./images/layout-1/Desk-min.jpg    1x,
+                  ./images/layout-1/Desk@2x-min.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/layout-1/Tab-min.jpg    1x,
+                  ./images/layout-1/Tab@2x-min.jpg 2x
+                "
+              />
+              <source
+                class="mob-img"
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/layout-1/mob-min.jpg    1x,
+                  ./images/layout-1/mob@2x-min.jpg 2x
+                "
+              />
+              <img src="./images/layout-1/Desk-min.jpg" alt="cofe" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="layout-two hidden">Layout</section>
+      <section class="gallery">
+        <div>
+          <h1 class="gallery-titel">Coffee Moments</h1>
+          <p class="gallery-txt">
+            Experience the warmth and community of CoffeeJoy.
+          </p>
+
+          <div class="gallery-container">
+            <ul class="gallery-list">
+              <li class="gallery-item">
+                <div class="gallery-img">
+                  <picture>
+                    <source />
+                    <source />
+                    <source />
+                  </picture>
+                </div>
+              </li>
+              <li class="gallery-item">
+                <div class="gallery-img">
+                  <picture>
+                    <source />
+                    <source />
+                    <source />
+                  </picture>
+                </div>
+              </li>
+              <li class="gallery-item">
+                <div class="gallery-img">
+                  <picture>
+                    <source />
+                    <source />
+                    <source />
+                  </picture>
+                </div>
+              </li>
+              <li class="gallery-item">
+                <div class="gallery-img">
+                  <picture>
+                    <source />
+                    <source />
+                    <source />
+                  </picture>
+                </div>
+              </li>
+              <li class="gallery-item">
+                <div class="gallery-img">
+                  <picture>
+                    <source />
+                    <source />
+                    <source />
+                  </picture>
+                </div>
+              </li>
+              <li class="gallery-item">
+                <div class="gallery-img">
+                  <picture>
+                    <source />
+                    <source />
+                    <source />
+                  </picture>
+                </div>
+              </li>
+              <li class="gallery-item">
+                <div class="gallery-img">
+                  <picture>
+                    <source />
+                    <source />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                      ./images/gallery/coffee cup-min.jpg 1x,
+                      ./images/gallery/coffee cup@2x-min.jpg 2x"
+                    />
+                  </picture>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="cta hidden">CTA</section>
+      <section class="testimonial hidden">Testimonial</section>
+      <section class="contact hidden">Contact</section>
     </main>
-    <footer class="hidden">Footer</footer>
+    <footer class="footer hidden">Footer</footer>
 
     <script src="./js/menu.js"></script>
   </body>

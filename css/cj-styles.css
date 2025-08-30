@@ -3,9 +3,9 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  color: #0b0803;
+  background-color: #e0cbb4;
 }
 
 /* reset */
@@ -56,7 +56,8 @@ button {
 /*common */
 
 .container {
-  max-width: 320px;
+  min-width: 320px;
+  max-width: 375px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -81,7 +82,6 @@ button {
   align-items: center;
   justify-content: space-between;
   min-height: 72px;
-  background-color: #e0cbb4;
 }
 
 .descr-list {
@@ -109,6 +109,13 @@ button {
     align-items: center;
     padding-right: 64px;
     gap: 32px;
+  }
+
+  .descr-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0b0803;
   }
 
   .navbar-menu-btn {
@@ -190,4 +197,107 @@ button {
   .navbar-menu {
     display: none;
   }
+}
+
+/* section-hero */
+
+/* section-layuot-one */
+
+.layout-one {
+  padding: 64px 0px;
+}
+
+.welcome {
+  min-width: 288px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.journey {
+  font-family: "Aboreto", sans-serif;
+  min-width: 288px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.layout-one-deskription {
+  min-width: 288px;
+  padding-bottom: 32px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.find-loc-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: 0 auto;
+  text-align: center;
+
+  margin-bottom: 32px;
+
+  border-radius: 100px;
+  min-width: 288px;
+  height: 44px;
+
+  box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+  background-color: #6f4e37;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.icon_loc {
+  margin-left: 12px;
+  fill: #fff;
+}
+
+.layout-one-img {
+  display: flex;
+  justify-content: center;
+  border-radius: 30%;
+}
+
+.layout-one-img {
+}
+
+.layout-one-pic {
+}
+
+.mob-img {
+}
+
+/* section-gallery */
+
+.gallery-titel {
+  font-family: "Aboreto", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #0b0803;
+}
+
+.gallery-txt {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0b0803;
+}
+.gallery-container {
+  display: flex;
+  flex-direction: column;
 }
