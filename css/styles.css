@@ -100,7 +100,7 @@ button {
   fill: #0b0803;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .header-logo {
     padding-left: 64px;
   }
@@ -124,7 +124,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media only screen and (min-width: 1440px) {
 }
 
 /* mobile menu */
@@ -194,7 +194,7 @@ button {
   line-height: 1.5;
   color: #0b0803;
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .navbar-menu {
     display: none;
   }
@@ -307,7 +307,7 @@ button {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .gallery-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -319,11 +319,17 @@ button {
   }
 }
 
-@media (min-width: 1158px) {
+@media only screen and (min-width: 1440px) {
+  .gallery {
+    justify-content: center;
+  }
+
   .gallery-list {
     flex-direction: column;
-    max-width: 1312px;
     max-height: 948px;
     gap: 32px;
+  }
+  .gallery-img {
+    width: auto;
   }
 }
