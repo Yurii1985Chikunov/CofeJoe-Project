@@ -272,7 +272,7 @@ button {
 
 /* section-gallery */
 
-.gallery-titel {
+.experience-titel {
   font-family: "Aboreto", sans-serif;
   font-weight: 400;
   font-size: 48px;
@@ -284,7 +284,7 @@ button {
   margin-bottom: 24px;
 }
 
-.gallery-txt {
+.experience-txt {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -294,13 +294,13 @@ button {
   margin-bottom: 32px;
 }
 
-.gallery-list {
+.experience-list {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
 }
 
-.gallery-img {
+.experience-img {
   position: relative;
   overflow: hidden;
   border-radius: 32px;
@@ -308,28 +308,31 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-  .gallery-list {
+  .experience-list {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
   }
 
-  .gallery-item {
+  .experience-item {
     flex-basis: calc((100% - 32px) / 2);
+  }
+  .experience-list .last-img {
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .gallery {
+  .experience {
     justify-content: center;
   }
 
-  .gallery-list {
+  .experience-list {
     flex-direction: column;
     max-height: 948px;
     gap: 32px;
   }
-  .gallery-img {
+  .experience-img {
     width: auto;
   }
 }
